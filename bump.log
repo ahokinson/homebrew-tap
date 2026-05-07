@@ -1,3 +1,3 @@
-bumped claude-code: 2.1.119 -> 2.1.126
-  darwin-arm64 sha256: 87a1d05018ceadfc1fe616bfc10262b0503f51986f4af2dc42d1ed856ed3f7bb
-  darwin-x64   sha256: 49a90c474383a9eda11310bd71f7ea6bb91361ec99443b733cb5003f6e703ccb
+bumped claude-code: 2.1.126 -> 2.1.132
+  darwin-arm64 sha256: 2ce6b9007f38f5caf0d116ae35d59f1a6d40e902ae7f9f19aca6ec483697b764
+  darwin-x64   sha256: 1953f50853eda4c374dfd558f1cf62a13a99c814aae73b42a07d3d9a49fe727b
