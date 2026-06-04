@@ -1,13 +1,13 @@
 cask "claude-code" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.1.161"
+  version "2.1.162"
 
   on_arm do
-    sha256 "5b4dc79eab05f9756c252c71deb339efa4429dffc1967dd8392cf87fcde4867f"
+    sha256 "2d407dd2a63243ac900f64331589b9fcd29a2159a73289070af685f4085a17d2"
   end
   on_intel do
-    sha256 "6f874fecac8a951f5f1991dc1470bc85a5e24f2588859b89cca0f1b6b5592310"
+    sha256 "53f2749bf24e5a80b23b017d0877f61c9894a3c06222141515b37a94c6051d41"
   end
 
   url "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/#{version}/darwin-#{arch}/claude",
