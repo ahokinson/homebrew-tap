@@ -10,15 +10,15 @@ brew tap ahokinson/tap
 
 | Name | Description |
 |------|-------------|
-| [bloom](https://github.com/ahokinson/bloom) | Grow tmux sessions from a single config file |
-| [clipleaks](https://github.com/ahokinson/clipleaks) | Catches secrets on your clipboard before they escape |
+| [bloom](https://github.com/ahokinson/bloom) | Define your tmux layouts once, then spin them up on demand |
+| [clipleaks](https://github.com/ahokinson/clipleaks) | Guards your clipboard and warns before you paste a secret |
 
 ## Casks
 
 | Name | Description |
 |------|-------------|
-| [claude-code](https://www.anthropic.com/claude-code) | Terminal-based AI coding assistant (latest channel) |
-| [zen](https://zen-browser.app/) | Gecko based web browser |
+| [claude-code](https://www.anthropic.com/claude-code) | Anthropic's AI coding agent, in your terminal (latest channel) |
+| [zen](https://zen-browser.app/) | Calm, customizable web browser built on Firefox |
 
 ## Install
 
