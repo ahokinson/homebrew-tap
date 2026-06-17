@@ -1,8 +1,8 @@
 class Bloom < Formula
   desc "Grow tmux sessions from a single config file"
   homepage "https://github.com/ahokinson/bloom"
-  head "https://github.com/ahokinson/bloom.git", branch: "develop"
   license "MIT"
+  head "https://github.com/ahokinson/bloom.git", branch: "develop"
 
   depends_on "go" => :build
   depends_on "tmux"

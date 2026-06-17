@@ -1,4 +1,4 @@
-name: bump claude-code
+name: bump casks
 
 on:
   schedule:
@@ -23,7 +23,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Bump claude-code
+      - name: Bump outdated casks
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: brew bump --cask --open-pr --no-fork claude-code
+        run: brew bump --auto --cask --open-pr --no-fork --tap=ahokinson/tap

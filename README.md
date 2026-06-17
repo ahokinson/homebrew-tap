@@ -1,29 +1,31 @@
 # ahokinson/tap
 
-A collection of developer tools, installable via Homebrew.
+My personal [Homebrew](https://brew.sh) tap.
 
-| Formula | Description |
-|---------|-------------|
-| [bloom](https://github.com/ahokinson/bloom) | Grow tmux sessions from a single config file |
-| [clipleaks](https://github.com/ahokinson/clipleaks) | Catches secrets on your clipboard before they escape |
-| [jitters](https://github.com/ahokinson/jitters) | Keep tabs on your AI coding assistant spend |
-| [terroir](https://github.com/ahokinson/terroir) | Cultivate dev work across branches, tickets, and editors |
+```sh
+brew tap ahokinson/tap
+```
 
-| Cask | Description |
-|------|-------------|
-| [claude-code](https://www.anthropic.com/claude-code) | Terminal-based AI coding assistant (latest channel) |
+## Formulae
+
+| Name                                                | Description                                                |
+| --------------------------------------------------- | ---------------------------------------------------------- |
+| [bloom](https://github.com/ahokinson/bloom)         | Define your tmux layouts once, then spin them up on demand |
+| [clipleaks](https://github.com/ahokinson/clipleaks) | Guards your clipboard and warns before you paste a secret  |
+
+## Casks
+
+| Name                                                 | Description                                            |
+| ---------------------------------------------------- | ------------------------------------------------------ |
+| [claude-code](https://www.anthropic.com/claude-code) | Anthropic's AI coding agent, in the terminal obivously |
+| [zen](https://zen-browser.app/)                      | Calm, customizable web browser built on Firefox        |
 
 ## Install
 
+```sh
+brew install clipleaks       # formula
+brew install --cask zen      # cask
 ```
-brew tap ahokinson/tap
-brew install <formula>
-brew install --cask ahokinson/tap/claude-code
-```
-Or in a `Brewfile`:
 
-```ruby
-tap "ahokinson/tap"
-brew "<formula>"
-cask "claude-code", args: { tap: "ahokinson/tap" }
-```
+Once the tap is added you can install by name; otherwise prefix with
+`ahokinson/tap/`.
