@@ -2,7 +2,6 @@ cask "claude-code" do
   arch arm: "arm64", intel: "x64"
 
   version "2.1.179"
-
   sha256 arm:   "af2a2d0cb99b0e8b094bc5dbe114ed2d5b2d27ba440987ef6f2f209da9954253",
          intel: "a0ad60761294bd208eda6cb0fd8e896c64397c8d317546a696c5e627782ec8cb"
 
@@ -18,6 +17,7 @@ cask "claude-code" do
   end
 
   conflicts_with cask: "homebrew/cask/claude-code"
+  depends_on :macos
 
   binary "claude"
 
