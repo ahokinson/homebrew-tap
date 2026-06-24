@@ -8,7 +8,9 @@ class Hermes < Formula
   license "MIT"
   head "https://github.com/NousResearch/hermes-agent.git", branch: "main"
 
+  depends_on "pkgconf" => :build
   depends_on "rust" => :build
+  depends_on "jpeg-turbo"
   depends_on "libyaml"
   depends_on "openssl@3"
   depends_on "python@3.13"
@@ -309,6 +311,7 @@ class Hermes < Formula
   end
 
   def install
+    ENV["OPENSSL_DIR"] = Formula["openssl@3"].opt_prefix
     virtualenv_install_with_resources
   end
 
