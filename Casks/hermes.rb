@@ -22,10 +22,10 @@ cask "hermes" do
   uninstall quit: "com.nousresearch.hermes.setup"
 
   zap trash: [
-        "~/.hermes",
-        "~/Library/Application Support/com.nousresearch.hermes.setup",
-        "~/Library/Caches/com.nousresearch.hermes.setup",
-        "~/Library/Preferences/com.nousresearch.hermes.setup.plist",
-        "~/Library/Saved Application State/com.nousresearch.hermes.setup.savedState",
-      ]
+    "~/.hermes",
+    "~/Library/Application Support/com.nousresearch.hermes.setup",
+    "~/Library/Caches/com.nousresearch.hermes.setup",
+    "~/Library/Preferences/com.nousresearch.hermes.setup.plist",
+    "~/Library/Saved Application State/com.nousresearch.hermes.setup.savedState",
+  ]
 end
