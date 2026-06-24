@@ -1,12 +1,11 @@
-class Hermes < Formula
+class HermesAgent < Formula
   include Language::Python::Virtualenv
 
-  desc "Self-improving AI agent that builds and refines its own skills"
-  homepage "https://hermes-agent.nousresearch.com/"
-  url "https://github.com/NousResearch/hermes-agent/archive/refs/tags/v2026.6.19.tar.gz"
-  sha256 "69b805ec0a7a7be880068ba8a3b17479d7ba29f0cac0a2e9c6692c02f346ba91"
+  desc "Self-improving AI agent that creates skills from experience"
+  homepage "https://hermes-agent.nousresearch.com"
+  url "https://files.pythonhosted.org/packages/99/c2/6b65b1c1d093eff415304472709479a392ac1422e36d007e32f3bb848f58/hermes_agent-0.17.0.tar.gz"
+  sha256 "5ceda2a131627fecf5fd52b05d0162b48032023a5d814bb5d1894db4aa146120"
   license "MIT"
-  head "https://github.com/NousResearch/hermes-agent.git", branch: "main"
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
@@ -312,10 +311,30 @@ class Hermes < Formula
 
   def install
     ENV["OPENSSL_DIR"] = formula_opt_prefix("openssl@3")
-    virtualenv_install_with_resources
+
+    venv = virtualenv_create(libexec, "python3.13")
+    venv.pip_install resources
+    venv.pip_install buildpath
+
+    pkgshare.install "skills", "optional-skills"
+
+    %w[hermes hermes-agent hermes-acp].each do |exe|
+      next unless (libexec/"bin"/exe).exist?
+
+      (bin/exe).write_env_script(
+        libexec/"bin"/exe,
+        HERMES_BUNDLED_SKILLS:  pkgshare/"skills",
+        HERMES_OPTIONAL_SKILLS: pkgshare/"optional-skills",
+        HERMES_MANAGED:         "homebrew",
+      )
+    end
   end
 
   test do
-    assert_match "hermes", shell_output("#{bin}/hermes --help 2>&1")
+    assert_match "Hermes Agent v#{version}", shell_output("#{bin}/hermes version")
+
+    managed = shell_output("#{bin}/hermes update 2>&1")
+    assert_match "managed by Homebrew", managed
+    assert_match "brew upgrade hermes-agent", managed
   end
 end
