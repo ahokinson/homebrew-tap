@@ -6,6 +6,20 @@ My personal [Homebrew](https://brew.sh) tap.
 brew tap ahokinson/tap
 ```
 
+## Why this tap?
+
+Several of these casks also exist in `homebrew/cask`; the copies here
+`conflicts_with` their upstream counterparts on purpose. Maintaining a
+separate tap makes it possible to:
+
+- **Curate.** One place for a specific set of tools, installable by short
+  name once the tap is added.
+- **Target Apple Silicon.** Everything is trimmed to arm64 macOS.
+- **Stay in control.** Each cask's `desc`, `livecheck`, `zap`, and
+  dependencies live here rather than under `homebrew/cask` policy.
+- **Own the supply chain.** Pinning `version` and `sha256` means every bump
+  is reviewed and vetted before it reaches any machine.
+
 ## Formulae
 
 | Name                                                | Description                                                |
@@ -15,10 +29,11 @@ brew tap ahokinson/tap
 
 ## Casks
 
-| Name                                                 | Description                                            |
-| ---------------------------------------------------- | ------------------------------------------------------ |
-| [claude-code](https://www.anthropic.com/claude-code) | Anthropic's AI coding agent, in the terminal obivously |
-| [zen](https://zen-browser.app/)                      | Calm, customizable web browser built on Firefox        |
+| Name                                                 | Description                                           |
+| ---------------------------------------------------- | ----------------------------------------------------- |
+| [claude-code](https://www.anthropic.com/claude-code) | Anthropic's agentic coding assistant for the terminal |
+| [codex](https://openai.com/codex/)                   | OpenAI's agentic coding assistant for the terminal    |
+| [zen](https://zen-browser.app/)                      | Customizable web browser built on Firefox             |
 
 ## Install
 

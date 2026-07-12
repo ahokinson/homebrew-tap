@@ -5,7 +5,7 @@ cask "zen" do
   url "https://github.com/zen-browser/desktop/releases/download/#{version}/zen.macos-universal.dmg",
       verified: "github.com/zen-browser/desktop/"
   name "Zen Browser"
-  desc "Gecko based web browser"
+  desc "Customizable web browser built on Firefox"
   homepage "https://zen-browser.app/"
 
   livecheck do
@@ -20,6 +20,7 @@ cask "zen" do
     "homebrew/cask/zen",
     "zen-privacy",
   ]
+  depends_on arch: :arm64
   depends_on :macos
 
   app "Zen.app"
