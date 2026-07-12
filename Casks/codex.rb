@@ -2,7 +2,8 @@ cask "codex" do
   version "0.144.1"
   sha256 "88e72ac8bd30815f7d18e62dac333dc20ce3ad1cba94be1649a1977dd9bfdbb8"
 
-  url "https://github.com/openai/codex/releases/download/rust-v#{version}/codex-aarch64-apple-darwin.tar.gz"
+  url "https://github.com/openai/codex/releases/download/rust-v#{version}/codex-aarch64-apple-darwin.tar.gz",
+      verified: "github.com/openai/codex/"
   name "Codex"
   desc "OpenAI's agentic coding assistant for the terminal"
   homepage "https://openai.com/codex/"
