@@ -29,11 +29,12 @@ separate tap makes it possible to:
 
 ## Casks
 
-| Name                                                 | Description                                           |
-| ---------------------------------------------------- | ----------------------------------------------------- |
-| [claude-code](https://www.anthropic.com/claude-code) | Anthropic's agentic coding assistant for the terminal |
-| [codex](https://openai.com/codex/)                   | OpenAI's agentic coding assistant for the terminal    |
-| [zen](https://zen-browser.app/)                      | Customizable web browser built on Firefox             |
+| Name                                                 | Description                                                     |
+| ---------------------------------------------------- | --------------------------------------------------------------- |
+| [claude-code](https://www.anthropic.com/claude-code) | Anthropic's agentic coding assistant for the terminal           |
+| [codex](https://openai.com/codex/)                   | OpenAI's agentic coding assistant for the terminal              |
+| [cupcake](https://cupcake.eqtylab.io/)               | Native policy enforcement layer for AI coding agents (OPA/Rego) |
+| [zen](https://zen-browser.app/)                      | Customizable web browser built on Firefox                       |
 
 ## Install
 
