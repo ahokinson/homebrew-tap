@@ -20,7 +20,6 @@ cask "codex" do
   depends_on :macos
 
   binary "codex-aarch64-apple-darwin", target: "codex"
-
   generate_completions_from_executable "codex-aarch64-apple-darwin", "completion", base_name: "codex"
 
   zap rmdir: "~/.codex"
