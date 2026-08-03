@@ -26,6 +26,7 @@ separate tap makes it possible to:
 | --------------------------------------------------- | ---------------------------------------------------------- |
 | [bloom](https://github.com/ahokinson/bloom)         | Define your tmux layouts once, then spin them up on demand |
 | [clipleaks](https://github.com/ahokinson/clipleaks) | Guards your clipboard and warns before you paste a secret  |
+| [reliquary](https://github.com/ahokinson/reliquary) | Keeps API tokens in your OS keyring and out of any dotfile |
 
 ## Casks
 
