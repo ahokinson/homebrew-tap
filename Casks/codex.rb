@@ -1,6 +1,6 @@
 cask "codex" do
-  version "0.145.0"
-  sha256 "072a30a65f05666735889ef0f60b56db186adbdde9d5c5cc1a64be0b598530fe"
+  version "0.146.1"
+  sha256 "337c5eb270d24bd556c46ad7814db62c2464b1eb0a253106bc98678dbd781821"
 
   url "https://github.com/openai/codex/releases/download/rust-v#{version}/codex-aarch64-apple-darwin.tar.gz",
       verified: "github.com/openai/codex/"
