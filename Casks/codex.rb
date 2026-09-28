@@ -1,6 +1,6 @@
 cask "codex" do
-  version "0.145.0"
-  sha256 "072a30a65f05666735889ef0f60b56db186adbdde9d5c5cc1a64be0b598530fe"
+  version "0.158.0"
+  sha256 "341c4a08f9ce1935b3007376dc2a3d50a0a89112930e9a474ae61367218f6e8a"
 
   url "https://github.com/openai/codex/releases/download/rust-v#{version}/codex-aarch64-apple-darwin.tar.gz",
       verified: "github.com/openai/codex/"
@@ -15,8 +15,8 @@ cask "codex" do
   end
 
   conflicts_with cask: "homebrew/cask/codex"
-  depends_on formula: "ripgrep"
   depends_on arch: :arm64
+  depends_on formula: "ripgrep"
   depends_on :macos
 
   binary "codex-aarch64-apple-darwin", target: "codex"
