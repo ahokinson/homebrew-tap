@@ -1,6 +1,6 @@
 cask "claude-code" do
-  version "2.1.220"
-  sha256 "8addc857f3fe64d5a0368af9ee50321b50afb4a6918ba3ef018ab84f5dbbe081"
+  version "2.1.302"
+  sha256 "5262ce9de86243fed0d21edc39b271555d56780d0112e2b194439fe1c6662d37"
 
   url "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/#{version}/darwin-arm64/claude",
       verified: "storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/"
